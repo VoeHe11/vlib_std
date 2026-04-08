@@ -19,6 +19,10 @@ extern "C"
 {
 #endif
 
+// ── Character ───────────────────────────────────────────
+int     vlib_isalpha(int c)   __attribute__((const));
+
+
 #ifdef __cplusplus
 } /* extern "C" */
 #endif

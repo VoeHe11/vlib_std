@@ -3,7 +3,7 @@ function(vlib_add_unit_test target_name test_name)
 
     add_executable(${target_name}
             ${ARGN}
-            ${_vlib_tests_root_dir}/support/test_assert.c
+            ${_vlib_tests_root_dir}/helpers/test_assert.c
     )
 
     target_include_directories(${target_name}
@@ -22,5 +22,5 @@ function(vlib_add_unit_test target_name test_name)
     )
 endfunction()
 
-#add_subdirectory(char)
+add_subdirectory(char)
 #add_subdirectory(string)

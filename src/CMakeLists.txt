@@ -1,5 +1,5 @@
 add_library(vlib_std STATIC
-        vlib_std.c
+        char/vlib_isalpha.c
 )
 
 add_library(vlib_std::vlib_std ALIAS vlib_std)
@@ -17,7 +17,7 @@ target_include_directories(vlib_std
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/../include>
         $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>
         PRIVATE
-        ${CMAKE_CURRENT_SOURCE_DIR}
+        ${CMAKE_CURRENT_SOURCE_DIR}/internal
 )
 
 set_target_properties(vlib_std PROPERTIES
