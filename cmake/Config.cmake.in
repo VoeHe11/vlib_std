@@ -1,0 +1,5 @@
+@PACKAGE_INIT@
+
+include("${CMAKE_CURRENT_LIST_DIR}/vlib_stdTargets.cmake")
+
+check_required_components(vlib_std)
