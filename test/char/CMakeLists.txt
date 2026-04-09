@@ -121,3 +121,35 @@ vlib_add_unit_test(
         unit.isalnum.logical_equivalence
         ${CMAKE_CURRENT_SOURCE_DIR}/unit_isalnum_logical_equivalence.c
 )
+
+# Tests for isascii
+vlib_add_unit_test(
+        unit_isascii_explicit
+        unit.isascii.explicit
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_isascii_explicit.c
+)
+vlib_add_unit_test(
+        unit_isascii_ascii_range
+        unit.isascii.ascii_range
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_isascii_ascii_range.c
+)
+vlib_add_unit_test(
+        unit_isascii_negative_rejected
+        unit.isascii.negative_rejected
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_isascii_negative_rejected.c
+)
+vlib_add_unit_test(
+        unit_isascii_above_ascii_rejected
+        unit.isascii.above_ascii_rejected
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_isascii_above_ascii_rejected.c
+)
+vlib_add_unit_test(
+        unit_isascii_boundaries
+        unit.isascii.boundaries
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_isascii_boundaries.c
+)
+vlib_add_unit_test(
+        unit_isascii_reference_equivalence
+        unit.isascii.reference_equivalence
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_isascii_reference_equivalence.c
+)
