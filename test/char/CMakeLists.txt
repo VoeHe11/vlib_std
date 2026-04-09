@@ -62,3 +62,25 @@ vlib_add_unit_test(
         unit.in_range.reference_equivalence
         ${CMAKE_CURRENT_SOURCE_DIR}/unit_in_range_reference_equivalence.c
 )
+
+# Tests for isdigit
+vlib_add_unit_test(
+        unit_isdigit_explicit
+        unit.isdigit.explicit
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_isdigit_explicit.c
+)
+vlib_add_unit_test(
+        unit_isdigit_digit_range
+        unit.isdigit.digit_range
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_isdigit_digit_range.c
+)
+vlib_add_unit_test(
+        unit_isdigit_letters_rejected
+        unit.isdigit.letters_rejected
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_isdigit_letters_rejected.c
+)
+vlib_add_unit_test(
+        unit_isdigit_ascii_classification
+        unit.isdigit.ascii_classification
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_isdigit_ascii_classification.c
+)

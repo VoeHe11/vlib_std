@@ -19,7 +19,7 @@
 #define COMP_CONST      __attribute__((const))
 
 // ── Helpers ───────────────────────────────────────────
-COMP_INLINE int vlib_in_range(int c, int low, int high)
+COMP_INLINE int vlib_in_range(const int c, const int low, const int high)
 {
     return (unsigned int)((unsigned int)(c) - (unsigned int)(low)) <=
            (unsigned int)((unsigned int)(high) - (unsigned int)(low));

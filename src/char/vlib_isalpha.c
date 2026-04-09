@@ -15,7 +15,7 @@
 #include <vlib_std.h>
 #include <vlib_internal.h>
 
-COMP_CONST int vlib_isalpha(int c)
+COMP_CONST int vlib_isalpha(const int c)
 {
     unsigned const int x = (unsigned int)c | 0x20u;
     return vlib_in_range((int)x, 'a', 'z');

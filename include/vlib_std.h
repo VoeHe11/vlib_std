@@ -21,7 +21,7 @@ extern "C"
 
 // ── Character ───────────────────────────────────────────
 int     vlib_isalpha(int c)   __attribute__((const));
-
+int     vlib_isdigit(int c)   __attribute__((const));
 
 #ifdef __cplusplus
 } /* extern "C" */
