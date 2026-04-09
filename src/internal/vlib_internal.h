@@ -5,7 +5,7 @@
 // File:    vlib_internal.h
 // Project: vlib_std
 //
-// Module:  TODO
+// Module:  INTERNAL HEADER
 //
 // Created:  08.04.2026 – henri
 // Modified: 08.04.2026
@@ -19,7 +19,7 @@
 #define COMP_CONST      __attribute__((const))
 
 // ── Helpers ───────────────────────────────────────────
-COMP_INLINE COMP_CONST int vlib_in_range(int c, int low, int high)
+COMP_INLINE int vlib_in_range(int c, int low, int high)
 {
     return (unsigned int)((unsigned int)(c) - (unsigned int)(low)) <=
            (unsigned int)((unsigned int)(high) - (unsigned int)(low));

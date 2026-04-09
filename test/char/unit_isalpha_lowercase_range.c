@@ -20,7 +20,8 @@ int main(void)
 {
     int c;
 
-    for (c = 'a'; c <= 'z'; ++c) {
+    for (c = 'a'; c <= 'z'; ++c)
+    {
         VLIB_TEST_ASSERT_EQ_INT(vlib_isalpha(c), 1);
     }
 

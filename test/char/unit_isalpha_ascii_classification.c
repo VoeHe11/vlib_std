@@ -20,9 +20,10 @@ int main(void)
 {
     int c;
 
-    for (c = 0; c <= 127; ++c) {
+    for (c = 0; c <= 127; ++c)
+    {
         const int expected =
-            ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')) ? 1 : 0;
+                ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')) ? 1 : 0;
 
         VLIB_TEST_ASSERT_EQ_INT(vlib_isalpha(c), expected);
     }

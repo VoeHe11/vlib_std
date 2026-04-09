@@ -5,7 +5,7 @@
 // File:    vlib_isalpha.c
 // Project: vlib_std
 //
-// Module:  Implementation
+// Module:  ISALPHA IMPLEMENTATION
 //
 // Created:  08.04.2026 – henri
 // Modified: 08.04.2026

@@ -5,7 +5,7 @@
 // File:    vlib_std.h
 // Project: vlib_std
 //
-// Module:  Global Header
+// Module:  GLOBAL HEADER
 //
 // Created:  08.04.2026 – henri
 // Modified: 08.04.2026
