@@ -153,3 +153,35 @@ vlib_add_unit_test(
         unit.isascii.reference_equivalence
         ${CMAKE_CURRENT_SOURCE_DIR}/unit_isascii_reference_equivalence.c
 )
+
+# Tests for isprint
+vlib_add_unit_test(
+        unit_isprint_explicit
+        unit.isprint.explicit
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_isprint_explicit.c
+)
+vlib_add_unit_test(
+        unit_isprint_printable_range
+        unit.isprint.printable_range
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_isprint_printable_range.c
+)
+vlib_add_unit_test(
+        unit_isprint_control_rejected
+        unit.isprint.control_rejected
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_isprint_control_rejected.c
+)
+vlib_add_unit_test(
+        unit_isprint_del_rejected
+        unit.isprint.del_rejected
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_isprint_del_rejected.c
+)
+vlib_add_unit_test(
+        unit_isprint_non_ascii_rejected
+        unit.isprint.non_ascii_rejected
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_isprint_non_ascii_rejected.c
+)
+vlib_add_unit_test(
+        unit_isprint_reference_equivalence
+        unit.isprint.reference_equivalence
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_isprint_reference_equivalence.c
+)
