@@ -1,2 +1,2 @@
 # vlib_std
-A standard c library
+A high-performance computing (HPC) c library.
