@@ -1,6 +1,7 @@
 add_library(vlib_std STATIC
         char/vlib_isalpha.c
         char/vlib_isdigit.c
+        char/vlib_isalnum.c
 )
 
 add_library(vlib_std::vlib_std ALIAS vlib_std)

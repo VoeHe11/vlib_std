@@ -84,3 +84,40 @@ vlib_add_unit_test(
         unit.isdigit.ascii_classification
         ${CMAKE_CURRENT_SOURCE_DIR}/unit_isdigit_ascii_classification.c
 )
+
+# Tests for isalnum
+vlib_add_unit_test(
+        unit_isalnum_explicit
+        unit.isalnum.explicit
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_isalnum_explicit.c
+)
+vlib_add_unit_test(
+        unit_isalnum_letters
+        unit.isalnum.letters
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_isalnum_letters.c
+)
+vlib_add_unit_test(
+        unit_isalnum_digits
+        unit.isalnum.digits
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_isalnum_digits.c
+)
+vlib_add_unit_test(
+        unit_isalnum_ascii_classification
+        unit.isalnum.ascii_classification
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_isalnum_ascii_classification.c
+)
+vlib_add_unit_test(
+        unit_isalnum_non_alnum_rejected
+        unit.isalnum.non_alnum_rejected
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_isalnum_non_alnum_rejected.c
+)
+vlib_add_unit_test(
+        unit_isalnum_consistency
+        unit.isalnum.consistency
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_isalnum_consistency.c
+)
+vlib_add_unit_test(
+        unit_isalnum_logical_equivalence
+        unit.isalnum.logical_equivalence
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_isalnum_logical_equivalence.c
+)
