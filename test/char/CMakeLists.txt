@@ -249,3 +249,35 @@ vlib_add_unit_test(
         unit.isupper.reference_equivalence
         ${CMAKE_CURRENT_SOURCE_DIR}/unit_isupper_reference_equivalence.c
 )
+
+# ── islower ───────────────────────────────────────────
+vlib_add_unit_test(
+        unit_islower_explicit
+        unit.islower.explicit
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_islower_explicit.c
+)
+vlib_add_unit_test(
+        unit_islower_range
+        unit.islower.range
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_islower_range.c
+)
+vlib_add_unit_test(
+        unit_islower_uppercase_rejected
+        unit.islower.uppercase_rejected
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_islower_uppercase_rejected.c
+)
+vlib_add_unit_test(
+        unit_islower_non_alpha_rejected
+        unit.islower.non_alpha_rejected
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_islower_non_alpha_rejected.c
+)
+vlib_add_unit_test(
+        unit_islower_ascii_classification
+        unit.islower.ascii_classification
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_islower_ascii_classification.c
+)
+vlib_add_unit_test(
+        unit_islower_reference_equivalence
+        unit.islower.reference_equivalence
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_islower_reference_equivalence.c
+)
