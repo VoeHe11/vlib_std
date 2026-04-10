@@ -281,3 +281,45 @@ vlib_add_unit_test(
         unit.islower.reference_equivalence
         ${CMAKE_CURRENT_SOURCE_DIR}/unit_islower_reference_equivalence.c
 )
+
+# ── toupper ───────────────────────────────────────────
+vlib_add_unit_test(
+        unit_toupper_explicit
+        unit.toupper.explicit
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_toupper_explicit.c
+)
+vlib_add_unit_test(
+        unit_toupper_lowercase_mapping
+        unit.toupper.lowercase_mapping
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_toupper_lowercase_mapping.c
+)
+vlib_add_unit_test(
+        unit_toupper_uppercase_unchanged
+        unit.toupper.uppercase_unchanged
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_toupper_uppercase_unchanged.c
+)
+vlib_add_unit_test(
+        unit_toupper_non_alpha_unchanged
+        unit.toupper.non_alpha_unchanged
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_toupper_non_alpha_unchanged.c
+)
+vlib_add_unit_test(
+        unit_toupper_boundaries
+        unit.toupper.boundaries
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_toupper_boundaries.c
+)
+vlib_add_unit_test(
+        unit_toupper_idempotence
+        unit.toupper.idempotence
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_toupper_idempotence.c
+)
+vlib_add_unit_test(
+        unit_toupper_reference_equivalence
+        unit.toupper.reference_equivalence
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_toupper_reference_equivalence.c
+)
+vlib_add_unit_test(
+        unit_toupper_bitmask_behavior
+        unit.toupper.bitmask_behavior
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_toupper_bitmask_behavior.c
+)
