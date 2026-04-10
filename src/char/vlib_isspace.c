@@ -14,9 +14,9 @@
 #include <vlib_std.h>
 #include <vlib_internal.h>
 
-COMP_CONST int  vlib_isspace(int c)
+COMP_CONST int  vlib_isspace(const int c)
 {
-    static const unsigned long long space_bits =
+    static constexpr unsigned long long space_bits =
         (1ULL << '\t') | (1ULL << '\n') | (1ULL << '\v') |
         (1ULL << '\f') | (1ULL << '\r') | (1ULL << ' ');
 
