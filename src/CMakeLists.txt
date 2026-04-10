@@ -4,6 +4,7 @@ add_library(vlib_std STATIC
         char/vlib_isalnum.c
         char/vlib_isascii.c
         char/vlib_isprint.c
+        char/vlib_isspace.c
 )
 
 add_library(vlib_std::vlib_std ALIAS vlib_std)

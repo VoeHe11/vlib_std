@@ -1,5 +1,5 @@
 
-# Tests for isalpha
+# ── isalpha ───────────────────────────────────────────
 vlib_add_unit_test(
         unit_isalpha_explicit
         unit.isalpha.explicit
@@ -31,7 +31,7 @@ vlib_add_unit_test(
         ${CMAKE_CURRENT_SOURCE_DIR}/unit_isalpha_case_normalization.c
 )
 
-# Tests for in_range (internal)
+# ── in_range (internal) ───────────────────────────────────────────
 vlib_add_unit_test(
         unit_in_range_basic
         unit.in_range.basic
@@ -63,7 +63,7 @@ vlib_add_unit_test(
         ${CMAKE_CURRENT_SOURCE_DIR}/unit_in_range_reference_equivalence.c
 )
 
-# Tests for isdigit
+# ── isdigit ───────────────────────────────────────────
 vlib_add_unit_test(
         unit_isdigit_explicit
         unit.isdigit.explicit
@@ -85,7 +85,7 @@ vlib_add_unit_test(
         ${CMAKE_CURRENT_SOURCE_DIR}/unit_isdigit_ascii_classification.c
 )
 
-# Tests for isalnum
+# ── isalnum ───────────────────────────────────────────
 vlib_add_unit_test(
         unit_isalnum_explicit
         unit.isalnum.explicit
@@ -122,7 +122,7 @@ vlib_add_unit_test(
         ${CMAKE_CURRENT_SOURCE_DIR}/unit_isalnum_logical_equivalence.c
 )
 
-# Tests for isascii
+# ── isascii ───────────────────────────────────────────
 vlib_add_unit_test(
         unit_isascii_explicit
         unit.isascii.explicit
@@ -154,7 +154,7 @@ vlib_add_unit_test(
         ${CMAKE_CURRENT_SOURCE_DIR}/unit_isascii_reference_equivalence.c
 )
 
-# Tests for isprint
+# ── isprint ───────────────────────────────────────────
 vlib_add_unit_test(
         unit_isprint_explicit
         unit.isprint.explicit
@@ -184,4 +184,36 @@ vlib_add_unit_test(
         unit_isprint_reference_equivalence
         unit.isprint.reference_equivalence
         ${CMAKE_CURRENT_SOURCE_DIR}/unit_isprint_reference_equivalence.c
+)
+
+# ── isspace ───────────────────────────────────────────
+vlib_add_unit_test(
+        unit_isspace_explicit
+        unit.isspace.explicit
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_isspace_explicit.c
+)
+vlib_add_unit_test(
+        unit_isspace_whitespace_set
+        unit.isspace.whitespace_set
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_isspace_whitespace_set.c
+)
+vlib_add_unit_test(
+        unit_isspace_non_whitespace_below_64
+        unit.isspace.non_whitespace_below_64
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_isspace_non_whitespace_below_64.c
+)
+vlib_add_unit_test(
+        unit_isspace_above_63_rejected
+        unit.isspace.above_63_rejected
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_isspace_above_63_rejected.c
+)
+vlib_add_unit_test(
+        unit_isspace_negative_rejected
+        unit.isspace.negative_rejected
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_isspace_negative_rejected.c
+)
+vlib_add_unit_test(
+        unit_isspace_reference_equivalence
+        unit.isspace.reference_equivalence
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_isspace_reference_equivalence.c
 )

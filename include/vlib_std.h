@@ -25,6 +25,7 @@ int     vlib_isdigit(int c)   __attribute__((const));
 int     vlib_isalnum(int c)   __attribute__((const));
 int     vlib_isascii(int c)   __attribute__((const));
 int     vlib_isprint(int c)   __attribute__((const));
+int     vlib_isspace(int c)   __attribute__((const));
 
 #ifdef __cplusplus
 } /* extern "C" */
