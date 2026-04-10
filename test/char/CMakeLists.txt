@@ -323,3 +323,45 @@ vlib_add_unit_test(
         unit.toupper.bitmask_behavior
         ${CMAKE_CURRENT_SOURCE_DIR}/unit_toupper_bitmask_behavior.c
 )
+
+# ── tolower ───────────────────────────────────────────
+vlib_add_unit_test(
+        unit_tolower_explicit
+        unit.tolower.explicit
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_tolower_explicit.c
+)
+vlib_add_unit_test(
+        unit_tolower_uppercase_mapping
+        unit.tolower.uppercase_mapping
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_tolower_uppercase_mapping.c
+)
+vlib_add_unit_test(
+        unit_tolower_lowercase_unchanged
+        unit.tolower.lowercase_unchanged
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_tolower_lowercase_unchanged.c
+)
+vlib_add_unit_test(
+        unit_tolower_non_alpha_unchanged
+        unit.tolower.non_alpha_unchanged
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_tolower_non_alpha_unchanged.c
+)
+vlib_add_unit_test(
+        unit_tolower_boundaries
+        unit.tolower.boundaries
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_tolower_boundaries.c
+)
+vlib_add_unit_test(
+        unit_tolower_idempotence
+        unit.tolower.idempotence
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_tolower_idempotence.c
+)
+vlib_add_unit_test(
+        unit_tolower_reference_equivalence
+        unit.tolower.reference_equivalence
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_tolower_reference_equivalence.c
+)
+vlib_add_unit_test(
+        unit_tolower_bitmask_behavior
+        unit.tolower.bitmask_behavior
+        ${CMAKE_CURRENT_SOURCE_DIR}/unit_tolower_bitmask_behavior.c
+)

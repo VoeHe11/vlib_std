@@ -8,6 +8,7 @@ add_library(vlib_std STATIC
         char/vlib_isupper.c
         char/vlib_islower.c
         char/vlib_toupper.c
+        char/vlib_tolower.c
 )
 
 add_library(vlib_std::vlib_std ALIAS vlib_std)

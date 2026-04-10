@@ -29,6 +29,7 @@ int     vlib_isspace(int c)   __attribute__((const));
 int     vlib_isupper(int c)   __attribute__((const));
 int     vlib_islower(int c)   __attribute__((const));
 int     vlib_toupper(int c)   __attribute__((const));
+int     vlib_tolower(int c)   __attribute__((const));
 
 #ifdef __cplusplus
 } /* extern "C" */
